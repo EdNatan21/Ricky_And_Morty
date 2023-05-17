@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'get_schwifty';
+    src: url(/Fontes/Rick-and-Morty-Font/get_schwifty.ttf) format('truetype');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    color: antiquewhite;
+}
+
+:root{
+    --cor01: #303030;
+    --cor02: #16ACC9;
+    --cor03: #60D3ED;
+    --cor04: #09665D;
+    --cor05: #0C2220;
+    --cor06: #6FD8ED;
+    --cor07: #63DEFA;
+    --cor08: #AD6423;
+    --fonteNova: 'get_schwifty';
+}
+
+body{
+    background-color: #303030;
+}
+
+header{
+    margin: 40px 60px 0px 60px;
+}
+
+#logotipo{
+    max-width: 360px;
+    width: 50%;
+}
+
+#menu{
+    max-width: 400px;
+    width: 50%;
+    height: 62px;
+    float: right;
+    margin-top: 44px;
+}
+
+li{
+    display: inline-block;
+    width: 30%;
+}
+
+.item{
+    float: right;
+    width: 50%;
+}
+
+article{
+    margin: 30px 60px 0px 60px;
+    height: inherit;
+}
+
+h1{
+    margin: auto    ;
+    text-align: center;
+    font-family: var(--fonteNova);
+    font-size: 2.3em;
+    margin-bottom: 30px;
+    color: var(--cor07);
+    text-shadow: 3px 3px 3px var(--cor04);
+    position: relative;
+    width: 250px;
+}
+
+h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border-left: 2px solid var(--cor07);
+    background: #303030;
+    animation: typing 1.8s steps(10) infinite;
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0px 35px;
+    }
+}
+
+#busca{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    color: var(--cor07);
+    text-shadow: 2px 2px 3px var(--cor04)
+}
+
+#pesquisar{
+    height: 25px;
+    width: 50%;
+    max-width: 200px;
+    border-radius: 5px;
+    color: var(--cor05);
+    font-size: 1.1em;
+    border: 2px solid var(--cor04);
+}
+
+#pesquisar:hover{
+    box-shadow: 1px 1px 3px var(--cor06);
+}
+
+#pesquisar:focus{
+    background-color: var(--cor07);
+}
+
+button{
+    height: 25px;
+    width: 70px;
+    background-color: var(--cor02);
+    color: var(--cor05);
+    padding-top: 2px;
+    border-radius: 5px;
+    border: 1px solid var(--cor05);
+}
+
+button:hover{
+    background-color: var(--cor07);
+}
+
+#card{
+    width: 100%;
+    height: 100%;
+}
+
+.img{
+    border-radius: 10px;
+    padding-right: 5px;
+    width: 32%;
+    min-width: 350px;
+    height: 350px;
+    margin: auto;
+}
+
+footer{
+    background-color: #0C2220;
+    margin: auto;
+    width: 36%;
+    height: auto;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+footer > p{
+    display: inline-block;
+    padding-right: 35px;
+    color: var(--cor02);
+    font-size: 1em;
+}
+
+
+
+

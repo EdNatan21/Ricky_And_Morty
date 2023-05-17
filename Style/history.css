@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'get_schwifty';
+    src: url(/Fontes/Rick-and-Morty-Font/get_schwifty.ttf) format('truetype');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    color: antiquewhite;
+}
+
+:root{
+    --cor01: #303030;
+    --cor02: #16ACC9;
+    --cor03: #60D3ED;
+    --cor04: #09665D;
+    --cor05: #0C2220;
+    --cor06: #6FD8ED;
+    --cor07: #63DEFA;
+    --cor08: #CDCDCD;
+    --fonteNova: 'get_schwifty';
+}
+
+body{
+    background-color: #303030;
+}
+
+header{
+    margin: 40px 60px 0px 60px;
+}
+
+#logotipo{
+    max-width: 360px;
+    width: 50%;
+}
+
+#menu{
+    max-width: 400px;
+    width: 50%;
+    height: 62px;
+    float: right;
+    margin-top: 44px;
+}
+
+li{
+    display: inline-block;
+    width: 30%;
+}
+
+.item{
+    float: right;
+    width: 50%;
+}
+
+article{
+    margin: 40px 60px 0px 60px;
+    height: inherit;
+}
+
+h1{
+    margin: auto    ;
+    text-align: center;
+    font-family: var(--fonteNova);
+    font-size: 2.3em;
+    margin-bottom: 30px;
+    color: var(--cor07);
+    text-shadow: 3px 3px 3px var(--cor04);
+    position: relative;
+    width: 160px;
+}
+
+h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border-left: 2px solid var(--cor07);
+    background: #303030;
+    animation: typing 1.8s steps(10) infinite;
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0px 35px;
+    }
+}
+
+picture{
+    width: 100%;
+    height: 300px;
+}
+
+.img{
+    width: 35%;
+    height: 30%;
+    margin-left: 35%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px var(--cor01);
+}
+
+section > p{
+    font-size: 1.15em;
+    text-align: justify;
+    width: 80%;
+    margin: 20px auto 20px auto;
+    color: var(--cor08);
+}
+
+footer{
+    background-color: #0C2220;
+    margin: auto;
+    width: 33%;
+    height: auto;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+footer > p{
+    display: inline-block;
+    padding-right: 35px;
+    color: var(--cor02);
+    font-size: 1em;
+    
+}

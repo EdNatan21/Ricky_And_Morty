@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'get_schwifty';
+    src: url(/Fontes/Rick-and-Morty-Font/get_schwifty.ttf) format('truetype');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    color: antiquewhite;
+}
+
+:root{
+    --cor01: #303030;
+    --cor02: #16ACC9;
+    --cor03: #60D3ED;
+    --cor04: #09665D;
+    --cor05: #0C2220;
+    --cor06: #6FD8ED;
+    --cor07: #63DEFA;
+    --fonteNova: 'get_schwifty';
+}
+
+body{
+    background-color: #303030;
+}
+
+header{
+    margin: 40px 60px 0px 60px;
+}
+
+#logotipo{
+    max-width: 360px;
+    width: 50%;
+}
+
+#menu{
+    max-width: 400px;
+    width: 40%;
+    height: 62px;
+    float: right;
+    margin-top: 55px;
+    margin-left: 5px;
+}
+
+li{
+    display: inline-block;
+    width: 20%;
+    height: 90px;
+    margin-right: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.item{
+    position: relative;
+    margin: auto;
+    width: 80%;
+    height: 50px;
+    min-width: 50px;
+    padding-top: 20px;
+}
+
+.home{
+    text-align: center;
+    font-size: 1em;
+    margin-right: 15px;
+    color: var(--cor01);
+}
+
+.home:hover{
+    color: var(--cor03);
+}
+
+article{
+    height: inherit;
+}
+
+#ilus{
+    margin: 33px 60px 0px 60px;
+}
+
+h1{
+    margin: auto;
+    text-align: center;
+    font-family: var(--fonteNova);
+    font-size: 2em;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: var(--cor07);
+    text-shadow: 3px 3px 3px var(--cor04);
+    position: relative;
+    width: 380px;
+}
+
+h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border-left: 2px solid var(--cor07);
+    background: #303030;
+    animation: typing 1.8s steps(10) infinite;
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0px 35px;
+    }
+}
+
+img{
+    margin-top: 40px;
+}
+
+.imagem{
+    width: 30%;
+    margin-left: 2%;
+    box-shadow: 3px 3px 3px rgb(63, 65, 65);
+    border-radius: 10px;
+}
+
+#sessao2{
+    margin: 40px 60px 0px 60px;
+}
+
+h2{
+    width: 50%;
+    height: 30px;
+    background-color: var(--cor05);
+    font-family: var(--fonteNova);
+    color: var(--cor02);
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+.trailer{
+    display: inline-block;
+}
+
+footer{
+    background-color: #0C2220;
+    margin: auto;
+    width: 36%;
+    height: auto;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+footer > p{
+    display: inline-block;
+    padding-right: 35px;
+    color: var(--cor02);
+    font-size: 1em;
+}
+
+
+
+
