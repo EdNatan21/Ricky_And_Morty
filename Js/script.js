@@ -12,18 +12,18 @@ const RickAndMorty = function(){
     .then (response => response.json())
 
     .then (function(dadosRicky){
-        console.log(dadosRicky)
         Card(dadosRicky)
     })
 }
 
 const NameCard = function (NomePersonagem){
-    fetch(`https://rickandmortyapi.com/api/character/?name=${NomePersonagem}`)
+    
+    fetch(`https://rickandmortyapi.com/api/character/?name=` + NomePersonagem)
 
     .then (response => response.json())
 
     .then (function(dadosRicky){
-        CardName(dadosRicky)
+        Card(dadosRicky);
     })
 }
 
@@ -68,11 +68,8 @@ const Card = function (dados){
     })
 }
 
-// window.addEventListener('load', function(){RickAndMorty()})
+window.addEventListener('load', function(){RickAndMorty()})
 buscar.addEventListener('click', function(){
-    let NomeP = document.getElementById('NomePersonagem').value
-    if (NomeP == '')
-        RickAndMorty()
-    else 
+        let NomeP = document.getElementById('NomePersonagem').value
         NameCard(NomeP)
 })
