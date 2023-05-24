@@ -19,7 +19,6 @@
     --cor05: #0C2220;
     --cor06: #6FD8ED;
     --cor07: #63DEFA;
-    --cor08: #CDCDCD;
     --fonteNova: 'get_schwifty';
 }
 
@@ -38,20 +37,46 @@ header{
 
 #menu{
     max-width: 400px;
-    width: 50%;
+    width: 40%;
     height: 62px;
     float: right;
-    margin-top: 44px;
+    margin-top: 55px;
+    margin-left: 5px;
 }
 
 li{
     display: inline-block;
-    width: 30%;
+    width: 20%;
+    height: 90px;
+}
+
+
+li:hover .home{
+    display: block;
+    color: var(--cor03);
+}
+
+a{
+    text-decoration: none;
 }
 
 .item{
-    float: right;
-    width: 50%;
+    position: relative;
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    min-width: 50px;
+    padding-top: 20px;
+}
+
+.home{
+    text-align: center;
+    margin: auto;
+    font-size: 1.1em;
+    position: absolute;
+    height: 10px;
+    color: #303030;
+    display: none;
 }
 
 article{

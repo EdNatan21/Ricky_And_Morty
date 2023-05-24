@@ -19,7 +19,6 @@
     --cor05: #0C2220;
     --cor06: #6FD8ED;
     --cor07: #63DEFA;
-    --cor08: #AD6423;
     --fonteNova: 'get_schwifty';
 }
 
@@ -38,20 +37,46 @@ header{
 
 #menu{
     max-width: 400px;
-    width: 50%;
+    width: 40%;
     height: 62px;
     float: right;
-    margin-top: 44px;
+    margin-top: 55px;
+    margin-left: 5px;
 }
 
 li{
     display: inline-block;
-    width: 30%;
+    width: 20%;
+    height: 90px;
+}
+
+
+li:hover .home{
+    display: block;
+    color: var(--cor03);
+}
+
+a{
+    text-decoration: none;
 }
 
 .item{
-    float: right;
-    width: 50%;
+    position: relative;
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    min-width: 50px;
+    padding-top: 20px;
+}
+
+.home{
+    text-align: center;
+    margin: auto;
+    font-size: 1.1em;
+    position: absolute;
+    height: 10px;
+    color: #303030;
+    display: none;
 }
 
 article{
@@ -89,62 +114,90 @@ h1::after{
     }
 }
 
-#busca{
+#search{
     margin-bottom: 20px;
     text-align: center;
 }
 
-label{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.5em;
-    color: var(--cor07);
-    text-shadow: 2px 2px 3px var(--cor04)
-}
-
-#pesquisar{
+#NomePersonagem{
     height: 25px;
     width: 50%;
-    max-width: 200px;
+    max-width: 300px;
+
+    border: 2px solid var(--cor04);
     border-radius: 5px;
     color: var(--cor05);
-    font-size: 1.1em;
-    border: 2px solid var(--cor04);
+
+    font-size: 1em;
+    text-align: center;
 }
 
-#pesquisar:hover{
+#NomePersonagem:hover{
     box-shadow: 1px 1px 3px var(--cor06);
 }
 
-#pesquisar:focus{
+#NomePersonagemr:focus{
     background-color: var(--cor07);
 }
 
-button{
+#buscar{
     height: 25px;
     width: 70px;
-    background-color: var(--cor02);
-    color: var(--cor05);
     padding-top: 2px;
+
     border-radius: 5px;
     border: 1px solid var(--cor05);
+
+    background-color: var(--cor02);
+    color: var(--cor05);
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-button:hover{
+#buscar:hover{
     background-color: var(--cor07);
 }
 
 #card{
     width: 100%;
-    height: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 0.8em;
 }
 
-.img{
-    border-radius: 10px;
-    padding-right: 5px;
-    width: 32%;
-    min-width: 350px;
-    height: 350px;
-    margin: auto;
+.pic{
+    width: 30%;
+    display: inline-block;
+    margin: 10px;
+
+    border: 1px solid var(--cor02);
+    box-shadow: 1px 1px 2px var(--cor02);
+}
+
+div > .pic > img{
+    width: 100%;
+    height: 50vh;
+}
+
+.nome{
+    float: left;
+    width: 50%;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.sexo{
+    float: left;
+    width: 22%;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.status{
+    float: left;
+    width: 25%;
+    margin-bottom: 5px;
+    text-align: center;
 }
 
 footer{

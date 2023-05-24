@@ -7,6 +7,7 @@
     <title>Personagens</title>
     <link rel="shortcut icon" href="../Imagens/Rick-And-Morty.ico" type="image/x-icon">
     <link rel="stylesheet" href="../Style/personagens.css">
+    <script src="../Js/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -16,14 +17,17 @@
 
         <nav id="menu">
             <ul type="none">
-                <li><a href="../Index.html">
+                <li id="principal" class="lista"><a href="../Index.html">
                     <img src="../Imagens/Home.svg" alt="Home" class="item">
+                    <p class="home">Home</p>
                 </a></li>
-                <li><a href="../Páginas/personagens.html">
+                <li id="caracteres" class="lista"><a href="../Páginas/personagens.html">
                     <img src="../Imagens/Personagens.svg" alt="Personagens" class="item">
+                    <p class="home">Personagens</p>               
                 </a></li>
-                <li><a href="../Páginas/history.html">
-                    <img src="../Imagens/History.svg" alt="História" class="item">
+                <li id="history" class="lista"><a href="../Páginas/history.html">
+                    <img src="../Imagens/History.svg" alt="História" class="item">               
+                    <p class="home">História</p>               
                 </a></li>
             </ul>
         </nav>
@@ -33,22 +37,12 @@
         <article>
             <section>
                 <h1>Personagens</h1>
-                <div id="busca">
-                    <label for="pesquisar">Pesquisar:</label>
-                    <input type="text" name="pesquisar" id="pesquisar">
-                    <button>Buscar</button>
+                <div id="search">
+                    <input type="text" name="NomePersonagem" id="NomePersonagem" placeholder="Digite o nome do personagem">
+                    <input type="button" id="buscar" value="buscar" name="btnbuscar">
                 </div>
 
                 <div id="card">
-                    <picture id="card1">
-                        <img src="../Imagens/Smith.png" alt="ex" class="img"> 
-                    </picture>
-                    <picture id="card2" class="img">
-                        <img src="../Imagens/Smith.png" alt="ex" class="img">
-                    </picture>
-                    <picture id="card3" class="img">
-                        <img src="../Imagens/Smith.png" alt="ex" class="img"> 
-                    </picture>
                 </div>
             </section>
         </article>

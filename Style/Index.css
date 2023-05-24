@@ -48,7 +48,12 @@ li{
     display: inline-block;
     width: 20%;
     height: 90px;
-    margin-right: 15px;
+}
+
+
+li:hover .home{
+    display: block;
+    color: var(--cor03);
 }
 
 a{
@@ -59,20 +64,19 @@ a{
     position: relative;
     margin: auto;
     width: 80%;
-    height: 50px;
+    height: 80%;
     min-width: 50px;
     padding-top: 20px;
 }
 
 .home{
     text-align: center;
-    font-size: 1em;
-    margin-right: 15px;
-    color: var(--cor01);
-}
-
-.home:hover{
-    color: var(--cor03);
+    margin: auto;
+    font-size: 1.1em;
+    position: absolute;
+    height: 10px;
+    color: #303030;
+    display: none;
 }
 
 article{
